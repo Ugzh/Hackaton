@@ -21,7 +21,10 @@ struct ContentView: View {
             Text("Hello, world!")
             Button("fetch")
             {
-                print("test \(vm.fetchFromAzure())")
+                var test = ProcessInfo.processInfo.environment["API_KEY"] ?? ""
+                print(test)
+                
+//                print("test \(vm.fetchFromAzure())")
             }.buttonStyle(.borderedProminent)
             ScrollView{
                 Markdown(vm.messageFetched)
