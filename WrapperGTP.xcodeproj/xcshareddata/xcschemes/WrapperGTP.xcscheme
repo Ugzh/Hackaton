@@ -77,7 +77,12 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "API_KEY"
-            value = "TEST2"
+            value = "72v0R7SOwjVHEZpBS1LbkM1d4HG1iMPecGiQG1ljlrgG1qhX2diXJQQJ99BDACfhMk5XJ3w3AAAAACOGGLBX"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "ENDPOINT"
+            value = "https://aifoundry10203483071421.openai.azure.com/openai/deployments/TEST/chat/completions?api-version=2025-01-01-preview"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

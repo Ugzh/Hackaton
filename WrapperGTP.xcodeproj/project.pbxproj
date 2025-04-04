@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514E1CF82D9F2BC9003ACA2B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 514E1CF72D9F2BC9003ACA2B /* Alamofire */; };
 		51AA639D2D9E8AE2003D29AB /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 51AA639C2D9E8AE2003D29AB /* MarkdownUI */; };
-		51AA63E82D9E91EF003D29AB /* Config.xconfig in Sources */ = {isa = PBXBuildFile; fileRef = 51AA63E72D9E91E3003D29AB /* Config.xconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +32,6 @@
 		51AA636B2D9E8484003D29AB /* WrapperGTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WrapperGTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AA637B2D9E8485003D29AB /* WrapperGTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrapperGTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51AA63852D9E8485003D29AB /* WrapperGTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrapperGTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		51AA63E72D9E91E3003D29AB /* Config.xconfig */ = {isa = PBXFileReference; lastKnownFileType = text; path = Config.xconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -59,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51AA639D2D9E8AE2003D29AB /* MarkdownUI in Frameworks */,
+				514E1CF82D9F2BC9003ACA2B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,6 @@
 		51AA63622D9E8484003D29AB = {
 			isa = PBXGroup;
 			children = (
-				51AA63E72D9E91E3003D29AB /* Config.xconfig */,
 				51AA636D2D9E8484003D29AB /* WrapperGTP */,
 				51AA637E2D9E8485003D29AB /* WrapperGTPTests */,
 				51AA63882D9E8485003D29AB /* WrapperGTPUITests */,
@@ -121,6 +120,7 @@
 			name = WrapperGTP;
 			packageProductDependencies = (
 				51AA639C2D9E8AE2003D29AB /* MarkdownUI */,
+				514E1CF72D9F2BC9003ACA2B /* Alamofire */,
 			);
 			productName = WrapperGTP;
 			productReference = 51AA636B2D9E8484003D29AB /* WrapperGTP.app */;
@@ -206,6 +206,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				51AA639B2D9E8ABE003D29AB /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+				514E1CF62D9F2BC9003ACA2B /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 51AA636C2D9E8484003D29AB /* Products */;
@@ -248,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51AA63E82D9E91EF003D29AB /* Config.xconfig in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +567,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		514E1CF62D9F2BC9003ACA2B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 		51AA639B2D9E8ABE003D29AB /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI";
@@ -578,6 +586,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		514E1CF72D9F2BC9003ACA2B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 514E1CF62D9F2BC9003ACA2B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		51AA639C2D9E8AE2003D29AB /* MarkdownUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 51AA639B2D9E8ABE003D29AB /* XCRemoteSwiftPackageReference "MarkdownUI" */;
